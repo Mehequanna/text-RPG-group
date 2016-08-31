@@ -63,7 +63,7 @@ Adventurer.prototype.death = function() {
   if (this.health < 1 || this.days > 30) {
     $("footer").hide();
     $("header").hide();
-    $(".container").hide();
+    $("#wrapper").hide();
     $("#death").show();
   }
 };
@@ -124,7 +124,7 @@ var descriptions = [
   "Huge swarms of mosquitos, gnats and worse drift haphazardly through the air around you. They bite and sting as your proceed through the wet marsh.",
   "You stand on the outskirts of the desert, with foothills to the north and west. The heat is extreme. You can sense that if you continue to the east, you may have the hardest trek that you have ever faced. You must rely on your cunning, skills, and overall durability to try and cross the Dead Sea.",
   "The large hills are starting to turn to mountains. The land is dry and the smell of soot fills your nose. There was a fire here recently and you get the urge to move again. To the north is the ancient stone monolith that you originated from. To the east are large hills of sand appearing as if they were golden ocean waves. To the south you see a similar sight of sand and burnt trees. Westward is the mountain's peak. A daunting task for even the most seasoned travelers. ",
-  "You are back where you started. The empty eyes of the beast stare at you hungrily.",
+  "<p>You are back where you started. The empty eyes of the beast stare at you hungrily.</p>",
   "You move amidst the spongy surface here, though before long you find yourself ankle deep in brackish swamp water.",
   "As you step from the water into the forest, you realize you no longer see the water. You don't see much of anything really, just trees. To the west, trees. To the east, trees. To the north, tress. To the south, wait is that? Nope, just more trees... You have a sincerely bad feeling about this. That voice in your head tells you to turn back. Do you?",
   "After traveling for what feels like days, you stop to take a break and scan the horizon. You are right in the middle of the desert and that is all you can see around you, for miles and miles. When you look to the east, though, you see an area that seems brighter and more inviting than the other areas. Something seems to be pulling you in that direction.",
@@ -219,7 +219,7 @@ Adventurer.prototype.spaceCheck = function() {
 Adventurer.prototype.winCheck = function() {
   if (this.yCord === 2 && this.xCord === 2 && this.item1 === true && this.item2 === true && this.item3 === true) {
     $("#description").html("<h3 class='text-center'>You have returned to the stone idol with your prize. Your stomach twists again in pain as you approach the monolith. The pain eases as you place the three gems into the empty sockets. Your vision blurs and time seems to stand still. When you open them again, you look through colors of blue, red and yellow down at yourself. The colors begin to merge as you go blind, because the gems are slowing returning to their homes. The thing that now posseses your body only smiles, before turning its back to you and leaving you alone in the darkness. <br><br>You have won.</h3><br><br><h3 class='text-center'>You won with <span id='health'></span> health and it took you <span id='days'></span> days</h3>");
-    $("footer").hide();
+    $("#footer").hide();
   }
 };
 

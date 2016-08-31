@@ -42,9 +42,7 @@ __Example Output__: Print death page
 
 
 ## Known Bugs
-
-#0.1
-At this point the project is a work in progress. The game itself has a minimum viable product to navigate the game map, reach the requisite number of items needed to complete the game and the ability for the user to perish if they take too long to complete the tasks.
+Forest font gets bigger on small screens.
 
 
 ## Authors

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.0.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>The Idol of Doom</title>
+    <link rel="icon" type="image/png" href="favicon.ico">
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header"></div>
+
+      <div id="content">
+        <div class="container-fluid">
+          <div id="body"> <!-- Body -->
+            <img src="img/title.png" alt="" />
+
+            <div id="description">
+              <p>You stand before a huge stone idol, depicting a three-eyed beast with a wide-open slavering mouth. As you touch it, you are wracked with a gut wrenching pain in your stomach. Suddenly, a voice whispers in your mind, "through water, air and fire retrieve my eyes or in thirty days meet your demise."</p>
+
+              <p>Search the surrounding region for the Idols eyes or die. The choice is yours.</p>
+
+              <img src="img/Idol.png" id="idol" alt="a picture of a beat up idol" />
+
+            </div> <!-- End Description  -->
+            <div id="notices">
+            </div><!-- End Notices  -->
+          </div> <!-- End Body -->
+        </div> <!-- End Main Container  -->
+      </div> <!-- End Content -->
+
+      <div id="footer">
+        <div class="container-fluid"> <!-- Footer  -->
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1">
+              <img src="img/north.png" id="north" alt="North Arrow"/>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="items col-md-2">
+              <h4>Items: <span id="items"></span></h4>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="stats col-md-2">
+              <h4>Strength: <span id="strength"></span></h4>
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-1">
+              <img src="img/west.png" id="west" alt="West Arrow"/>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1">
+              <img src="img/east.png" id="east" alt="East Arrow"/>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="stats col-md-2">
+              <h4>Heatlh: <span id="health"></span></h4>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="items col-md-2">
+              <h4>Dexterity: <span id="dexterity"></span></h4>
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1">
+              <img src="img/south.png" id="south" alt="South Arrow"/>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="items col-md-2">
+              <h4>Days: <span id="days"></span></h4>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="stats col-md-2">
+              <h4>Wit: <span id="wit"></span></h4>
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+        </div>
+      </div> <!-- End Footer  -->
+
+      <div class="container"> <!-- Death  -->
+        <div id="death">
+          <p>You Have Died</p>
+          <img src="img/GrimReaper.png" alt="a picture of the grim reaper"/>
+        </div>
+      </div> <!-- End Death  -->
+    </div> <!-- End Wrapper -->
+  </body>
+</html>

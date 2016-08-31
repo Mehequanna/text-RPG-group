@@ -9,65 +9,46 @@
     <link rel="icon" type="image/png" href="favicon.ico">
   </head>
   <body>
-    <div class="container">
-      <img src="img/title.png" alt="" />
-
-      <div id="description">
-        <p>You stand before a huge stone idol, depicting a three-eyed beast with a wide-open slavering mouth. As you touch it, you are wracked with a gut wrenching pain in your stomach. Suddenly, a voice whispers in your mind, "through water, air and fire retrieve my eyes or in thirty days meet your demise."</p>
-
-        <p>Search the surrounding region for the Idols eyes or die. The choice is yours.</p>
-
-        <img src="img/Idol.png" alt="a picture of a beat up idol" />
-
-      </div> <!-- End Description  -->
-      <div id="notices">
-      </div><!-- End Notices  -->
-    </div> <!-- End Main Container  -->
-    <div id="death">
-      <p>You Have Died</p>
-      <img src="img/GrimReaper.png" alt="a picture of the grim reaper"/>
-    </div> <!-- End Death  -->
-  </body>
-
-  <footer>
-    <div class="row">
-      <div class="col-sm-3">
-        <img src="img/north.png" id="north" alt="North Arrow"/>
-        <div class="items">
-          <img src="img/items.png"/> <span id="items"></span>
-        </div>
-        <div class="stats">
-          <img src="img/strength.png"/> <span id="strength"></span>
-        </div>
+    <div id="wrapper">
+      <div id="header">
+        <h1 class="text-center">The Idol Of Doom!</h1>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-3">
+      <div id="content">
+        <div id="description">
+        <p>You stand before a huge stone idol, depicting a three-eyed beast with a wide-open slavering mouth. As you touch it, you are wracked with a gut wrenching pain in your stomach. Suddenly, a voice whispers in your mind, "through water, air and fire retrieve my eyes or in thirty days meet your demise."
+        <br>
+        <br>
+        Search the surrounding region for the Idols eyes or die. The choice is yours.
+        <img src="img/Idol.png" id="idol" alt="a picture of a beat up idol" />
+        </p>
+
+
+        </div> <!-- End Description  -->
+
+        <div id="notices">
+        </div><!-- End Notices  -->
+      </div>
+      <div id="footer">
+        <img src="img/north.png" class="arrow" id="north" alt="North Arrow"/>
+        <h4 id="strengthTitle">Strength: <span id="strength"></span></h4>
+        <h4 id="itemsTitle">Items: <span id="items"></span></h4>
+        <br>
+
         <img src="img/west.png" id="west" alt="West Arrow"/>
         <img src="img/east.png" id="east" alt="East Arrow"/>
-        <div class="stats">
-          <img src="img/health.png"/> <span id="health"></span>
-        </div>
-        <div class="items">
-          <img src="img/dexterity.png"/> <span id="dexterity"></span>
-        </div>
-      </div>
-    </div>
+        <h4 id="dexterityTitle">Dexterity: <span id="dexterity"></span></h4>
+        <h4 id="healthTitle">Heatlh: <span id="health"></span></h4>
+        <br>
 
-    <div class="row">
-      <div class="col-sm-3">
         <img src="img/south.png" id="south" alt="South Arrow"/>
-        <div class="items">
-          <img src="img/moves.png"/> <span id="days"></span>
-        </div>
-        <div class="stats">
-          <img src="img/wit.png"/> <span id="wit"></span>
-        </div>
+        <h4 id="witTitle">Wit: <span id="wit"></span></h4>
+        <h4 id="daysTitle">Days: <span id="days"></span></h4>
       </div>
     </div>
 
-
-
-  </footer>
-
+    <div id="death">
+      <h1>You Have Died</h1>
+      <img src="img/death.jpg" alt="a picture of the grim reaper"/>
+    </div>
+  </body>
 </html>

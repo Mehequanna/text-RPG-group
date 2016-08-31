@@ -1,5 +1,78 @@
-#north, #south, #east, #west {
-  max-width: 4%
+html,
+body {
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
+#wrapper {
+  min-height:100%;
+  position:relative;
+}
+
+#header {
+  background:#ededed;
+  padding:10px;
+}
+
+#content {
+  padding-bottom:125px; /* Height of the footer element */
+  padding: 5%;
+}
+
+#footer {
+  background:#ffab62;
+  width:100%;
+  height:125px;
+  position:absolute;
+  bottom:0;
+  left:0;
+  padding: 5px;
+}
+
+#idol {
+  display: block;
+  margin: 0 auto;
+}
+
+h4 {
+  display: inline-block;
+  /*margin: 0 5%;*/
+}
+
+#strengthTitle,
+#dexterityTitle,
+#witTitle {
+  margin-left: 5px;
+}
+
+#itemsTitle {
+  margin-left: 15px;
+}
+
+#healthTitle {
+  margin-left: 13px;
+}
+
+#daysTitle {
+  margin-left: 60px;
+}
+
+#north,
+#south,
+#west,
+#east {
+  width: 40px;
+  max-width: 40px;
+}
+
+#north,
+#south {
+  margin: 0 45px;
+}
+
+#west {
+  margin-right: 45px;
 }
 
 #death {
@@ -8,83 +81,12 @@
   color: red;
   min-height: 100vh;
   text-align: center;
-  font-size: 8em;
-  line-height: 3em;
+  font-size: 3rem;
+  padding: 25px 0;
 }
 
-.container {
-  min-height: calc(100vh - 267px);
-  margin-left: 10px;
-  margin-right: 10px;
-}
-/*
-#dex, #str, #wit, #health, #days, #items {
-  margin-top: 10px
-}*/
-
-footer {
-  position: fixed;
-  min-width: 1024px;
-  width: auto;
-  width: 1024px;
-  height: 106px;
-  bottom: 20px;
-  background-color: tan;
-  padding-bottom: 25px;
-}
-
-.stats, .items {
-  float: right;
-  display: inline-block;
-  margin-right: 30%;
-}
-
-.gems {
-  margin: 0 2.5px;
-}
-
-#description img {
-  -webkit-box-shadow: 10px 10px 35px -7px rgba(148,120,64,1);
-  -moz-box-shadow: 10px 10px 35px -7px rgba(148,120,64,1);
-  box-shadow: 10px 10px 35px -7px rgba(148,120,64,1);
-}
-/*.stats-mid, .items-mid {
-  float: right;
-  display: inline-block;
-  margin-right: 12%;
-}*/
-
-
-/*
-#item1 {
-  float: right;
-  display: inline-block;
-  margin-right: -15px;
-}*/
-
-
-.col-sm-3 {
-  background-color: #ac9371;
-}
-
-img#north {
-  margin-left: 67px;
-}
-
-img#west {
-  margin-left: 25px;
-}
-
-img#east {
-  margin-left: 33px;
-}
-
-img#south {
-  margin-left: 67px;
-}
-
-@media screen and (max-width: 955px) {
-  p.description, p.notices {
-    resize: both;
+/*@media (max-width : 700px) {
+  p {
+    font-size: 6rem;
   }
-}
+}*/

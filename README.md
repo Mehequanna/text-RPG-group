@@ -48,5 +48,5 @@ Forest font gets bigger on small screens.
 ## Authors
 Stephen Emery, J. Ryan Conklin, Matt Botz, and Scott Scholz.
 
-##License
+## License
 This work is listed under the MIT License.
